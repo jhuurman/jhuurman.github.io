@@ -428,7 +428,7 @@ ninja.data = [{
         title: 'YouTube',
         section: 'Socials',
         handler: () => {
-          window.open("https://youtube.com/@https://www.youtube.com/@johanhuurman", "_blank");
+          window.open("https://youtube.com/@johanhuurman", "_blank");
         },
       },{
       id: 'light-theme',
