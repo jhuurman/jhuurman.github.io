@@ -7,13 +7,13 @@ nav: true
 nav_order: 2
 ---
 
-<!-- _pages/papers.md -->
+<!-- _pages/publications.md -->
 
 <!-- Bibsearch Feature -->
 
 {% include bib_search.liquid %}
 
-<div class="papers">
+<div class="publications">
 
 {% bibliography %}
 
