@@ -414,7 +414,7 @@ ninja.data = [{
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%65%6D%61%69%6C@%67%6D%61%69%6C.%63%6F%6D", "_blank");
+          window.open("mailto:%6A%68%75%75%72%6D%61@%6E%63%73%75.%65%64%75", "_blank");
         },
       },{
         id: 'social-linkedin',
@@ -424,11 +424,11 @@ ninja.data = [{
           window.open("https://www.linkedin.com/in/johan-huurman-758105224", "_blank");
         },
       },{
-        id: 'social-youtube',
-        title: 'YouTube',
+        id: 'social-scholar',
+        title: 'Google Scholar',
         section: 'Socials',
         handler: () => {
-          window.open("https://youtube.com/@johanhuurman", "_blank");
+          window.open("https://scholar.google.com/citations?user=xrn3xF0AAAAJ", "_blank");
         },
       },{
       id: 'light-theme',
