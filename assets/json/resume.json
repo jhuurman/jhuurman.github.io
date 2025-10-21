@@ -1,18 +1,18 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Johannes Huurman",
+    "label": "PhD Student",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "jhuurma@ncsu.edu",
+    "phone": "",
+    "url": "https://jhuurman.github.io/",
+    "summary": "Machine learning, statistical mechanics, and theoretical polymer physics.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
+      "address": "911 Partners Way",
+      "postalCode": "NC 27606",
+      "city": "Raleigh",
       "countryCode": "US",
-      "region": "California"
+      "region": "North Carolina"
     },
     "profiles": [
       {
@@ -22,16 +22,71 @@
       }
     ]
   },
-  "work": [
-    {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
+"work": [
+{
+"name": "Oak Ridge National Laboratory",
+"position": "Machine Learning Intern",
+"url": "",
+"startDate": "2024-08-01",
+"endDate": "2025-08-01",
+"summary": "",
+"highlights": [
+"Modeled nuclear safety scenarios using NVIDIA PhysX engine in a Digital Twin environment",
+"Created machine learning classification algorithm to sort documents on the Curie database",
+"Developed machine learning algorithm for anomaly detection of spent nuclear fuel casks"
+]
+},
+{
+"name": "Oregon State University, Dept. of Mathematics",
+"position": "Student Researcher in Mathematical Physics",
+"url": "",
+"startDate": "2023-06-01",
+"endDate": "2025-08-01",
+"summary": "",
+"highlights": [
+"Used Density Matrix Renormalization Group to model spin dynamics on bilayer coupled spin chain with XXZ anisotropy",
+"Modeled topological solitons in the spin-1/2 Kitaev chain with external magnetic field using Density Matrix Renormalization Group",
+"Developed a computational model utilizing the SpinW framework to investigate spin wave dynamics in 2D materials"
+]
+},
+{
+"name": "Oregon State University, Dept. of Engineering",
+"position": "Engineering Teaching and Learning Assistant",
+"url": "",
+"startDate": "2022-01-01",
+"endDate": "2025-03-01",
+"summary": "",
+"highlights": [
+"Independently conducted recitation sessions, leading discussions and interactive activities to reinforce techniques for circuit analysis",
+"Collaborated with faculty and course instructors to develop instructional materials, such as worksheets, tutorials, and practice problems",
+"Kept abreast of advancements in electrical engineering and pedagogy, integrating new insights into teaching methodologies"
+]
+},
+{
+"name": "Oregon State University, Dept. of Physics",
+"position": "Student Researcher in Theoretical Astrophysics",
+"url": "",
+"startDate": "2023-01-01",
+"endDate": "2023-05-01",
+"summary": "",
+"highlights": [
+"Contributed to computational models for Gravitational wave background (GWB) from black hole binaries",
+"Developed better approximation for Hellings and Downs curve using Legendre series approximation"
+]
+},
+{
+"name": "Oregon State University, Dept. of Chemistry",
+"position": "Student Researcher in Theoretical Organic Chemistry",
+"url": "",
+"startDate": "2022-03-01",
+"endDate": "2022-09-01",
+"summary": "",
+"highlights": [
+"Awarded the prestigious SURE (Summer Undergraduate Research Experience) scholarship to support my research in theoretical organic chemistry",
+"Used DFT to calculate group electronegativity for organic molecules",
+"Demonstrated effective communication skills through the presentation of research findings at the program's conclusion"
+]
+}
   ],
   "volunteer": [
     {
