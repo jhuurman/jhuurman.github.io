@@ -36,4 +36,4 @@ latest_posts:
 ---
 I am a first year PhD student in the Rumyantsev group. My current interests include non-equilibrium statistical mechanics, dynamical field theories, and their applications to polymers. 
 
-Before coming to NC State, I was an undergraduate researcher in the Saenz-Rodriguez lab where I studied the Heisenberg-Ising (quantum) spin chain and its extensions. My [undergraduate thesis]{/assets/pdf/johanneshuurman_undergraduate_thesis.pdf} used Density Matrix Renormalization Group (DMRG) to model the propagation of certain nonlinear excitations called solitons in the Kitaev-Majorana chain.
+Before coming to NC State, I was an undergraduate researcher in the Saenz-Rodriguez lab where I studied the Heisenberg-Ising (quantum) spin chain and its extensions. My [undergraduate thesis](/assets/pdf/johanneshuurman_undergraduate_thesis.pdf) used Density Matrix Renormalization Group (DMRG) to model the propagation of certain nonlinear excitations called solitons in the Kitaev-Majorana chain.
