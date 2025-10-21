@@ -2,15 +2,15 @@
 layout: about
 title: about
 permalink: /
-subtitle: Theoretical Physics
+subtitle: Theoretical Polymer Physics
 
 profile:
   align: right
   image: johan_picture.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>123 office number</p>
-    <p>123 address street</p>
+    <p>Office number TBD</p>
+    <p>911 Partners Way</p>
     <p>Raleigh, North Carolina</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
@@ -34,6 +34,6 @@ latest_posts:
 #Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
 
 ---
-I am very interested in the mathematical aspects of theoretical physics, also known as mathematical physics. 
+I am a first year PhD student in the Rumyantsev group. My current interests include non-equilibrium statistical mechanics, dynamical field theories, and their applications to polymers. 
 
-I am currently learning about the rich ([mathematical](https://arxiv.org/abs/1608.06529)) world of polymer physics. 
+Before coming to NC State, I was an undergraduate researcher in the Saenz-Rodriguez lab where I studied the Heisenberg-Ising (quantum) spin chain and its extensions. My [undergraduate thesis]{} used Density Matrix Renormalization Group (DMRG) to model the propagation of certain nonlinear excitations called solitons in the Kitaev-Majorana chain.
