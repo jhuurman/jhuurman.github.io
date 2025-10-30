@@ -9,10 +9,8 @@ profile:
   image: johan_picture.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Office number TBD</p>
-    <p>911 Partners Way</p>
-    <p>Raleigh, North Carolina</p>
-
+    <p>Office: EB1 2027</p>
+    
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
