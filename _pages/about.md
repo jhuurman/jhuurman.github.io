@@ -20,7 +20,7 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 
@@ -36,4 +36,4 @@ I am a first year PhD student in the Rumyantsev group. My current interests incl
 
 In my undergraduate, I was a researcher in the Saenz-Rodriguez lab where I studied the Heisenberg-Ising (quantum) spin chain and its extensions. My [undergraduate thesis](/assets/pdf/johanneshuurman_undergraduate_thesis.pdf) used Density Matrix Renormalization Group (DMRG) to model the propagation of certain nonlinear excitations called solitons in the Kitaev-Majorana chain.
 
-Prior to coming to NC State, I was an intern at Oak Ridge National Laboratory for about a year thanks to both the SULI and ECO programs. For SULI, I was under the mentorship of Dr. Kunal Mondal, where we made a digital twin for a nuclear facility and studied the safety and security of this facility. In the ECO internship, I was under the mentorship of Dr. Ryan Karkkainen, where I made a machine-learning model for document classification of the CURIE database. 
+Prior to coming to NC State, I was an intern at Oak Ridge National Laboratory for about a year thanks to both the SULI and ECO programs. For SULI, I was under the mentorship of Dr. Kunal Mondal, where we made a digital twin for a nuclear facility and studied the safety and security of this facility. In the ECO internship I was under the mentorship of Dr. Ryan Karkkainen, where I made a machine-learning model for document classification of the CURIE database. 
