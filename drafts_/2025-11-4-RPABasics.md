@@ -8,30 +8,27 @@ categories: sample-posts
 related_posts: false
 ---
 
-I have recently been learning about Random Phase Approximation (RPA), which is a technique used to calculate fluctuations of the free energy in the so-called weak-segregation regime (of polymers). My aim with this blog 
-post is to introduce RPA by way of simple (but nontrivial) example. 
+I have recently been learning about Random Phase Approximation (RPA), which is a technique used to calculate fluctuations of the free energy in the so-called weak-segregation regime (of polymers). My aim with this blog post is to introduce RPA by way of simple (but nontrivial) example. 
 
-Consider an arbitrary number (not too large, but not too small) of polyelectrolytes (polymers with $$\pm$$ charge on the monomer units) with $$N$$ monomers and lattice spacing $a$ in bad solvent. Polymers in bad solvent will tend to form clumps (this is called many things depending on the flavor
-of polymer one studies, but here I will refer to it as aggregation). Because the polyelectrolytes are strictly positively charged, they induce counter-ions (negatively charged particles) in the solvent. It is natural
-then to define the scalar fields $$\phi(\mathbf{r})$$ and $$n(\mathbf{r})$$ which denote the polyelectrolyte density and counter-ion density, respectively. We can define now the charge density also as a scalar field:
+Consider an arbitrary number (not too large, but not too small) of polyelectrolytes (polymers with $$\pm$$ charge on the monomer units) with $$N$$ monomers and lattice spacing $a$ in bad solvent. Polymers in bad solvent will tend to form clumps (this is called many things depending on the flavor of polymer one studies, but here I will refer to it as aggregation). Because the polyelectrolytes are strictly positively charged, they induce counter-ions (negatively charged particles) in the solvent. It is natural then to define the scalar fields $$\phi(\mathbf{r})$$ and $$n(\mathbf{r})$$ which denote the polyelectrolyte density and counter-ion density, respectively. We can define now the charge density also as a scalar field:
   
-  \begin{equation}
+  $$
     \rho(\mathbf{r}) = (f\phi(\mathbf{r}) - n(\mathbf{r})),
-  \end{equation}
+  $$
   
 where $$f$$ denotes the fraction of charged monomers in the polyelectrolyte. We assume for this problem that $$fN \gg 1$$, i.e., that a sufficient number of monomers carry charge. To make our calculations simple in the end,
 we also assume the system is net neutral so that $$\frac{f}{a^3} \langle \phi \rangle = \langle n \rangle$$ (here, $$\langle \cdot \rangle $$ denotes the _expectation value_, or _mean field value_). The fluctuations in density
 of both the polyelectrolytes and counter-ions are defined as
 
-  \begin{equation}
+  $$
     \delta \phi(\mathbf{r}) = \phi(\mathbf{r}) - \langle \phi(\mathbf{r}) \rangle, \quad \delta n(\mathbf{r}) = n(\mathbf{r}) - \langle n(\mathbf{r}) \rangle.
-  \end{equation}
+  $$
 
 We aim now to write down the second-order fluctuations 
 
-  \begin{equation}
+  $$
     \delta^{(2)} \mathcal{F} = \delta^{(2)} \mathcal{F}_\mathrm{vol} + \delta^{(2)} \mathcal{F}_\mathrm{grad} + \delta^{(2)} \mathcal{F}_\mathrm{coul},
-  \end{equation}
+  $$
 
   where 
 
