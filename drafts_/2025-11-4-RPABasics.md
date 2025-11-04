@@ -30,7 +30,7 @@ We aim now to write down the second-order fluctuations
     \delta^{(2)} \mathcal{F} = \delta^{(2)} \mathcal{F}_\mathrm{vol} + \delta^{(2)} \mathcal{F}_\mathrm{grad} + \delta^{(2)} \mathcal{F}_\mathrm{coul},
   $$
 
-  where 
+  where $$\mathcal{F}_\mathrm{vol} = \int$$
 
 This theme supports rendering beautiful math in inline and display modes using [MathJax 3](https://www.mathjax.org/) engine. You just need to surround your math expression with `$$`, like `$$ E = mc^2 $$`. If you leave it inside a paragraph, it will produce an inline expression, just like $$ E = mc^2 $$.
 
