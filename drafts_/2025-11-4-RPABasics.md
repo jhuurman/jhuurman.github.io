@@ -10,10 +10,12 @@ related_posts: false
 
 I have recently been learning about Random Phase Approximation (RPA), which is a technique used to calculate fluctuations of the free energy in the so-called weak-segregation regime (of polymers). My aim with this blog post is to introduce RPA by way of simple (but nontrivial) example. 
 
+Let us begin by defining terminology. The fluctuation of an observable $$\mathcal{A}$$ is defined as $$\delta\mathcal{A} = \mathcal{A} - \langle \mathcal{A} \rangle$$, where $$\langle \cdot \rangle$$ denotes the _mean-field value_, or _expectation value_, depending on the context.
+
 Consider an arbitrary number (not too large, but not too small) of polyelectrolytes (polymers with $$\pm$$ charge on the monomer units) with $$N$$ monomers and lattice spacing $a$ in bad solvent. Polymers in bad solvent will tend to form clumps (this is called many things depending on the flavor of polymer one studies, but here I will refer to it as aggregation). Because the polyelectrolytes are strictly positively charged, they induce counter-ions (negatively charged particles) in the solvent. It is natural then to define the scalar fields $$\phi(\mathbf{r})$$ and $$n(\mathbf{r})$$ which denote the polyelectrolyte density and counter-ion density, respectively. We can define now the charge density also as a scalar field:
   
   $$
-    \rho(\mathbf{r}) = (f\phi(\mathbf{r}) - n(\mathbf{r})),
+    \rho(\mathbf{r}) = \left(\frac{f}{a^3} \phi(\mathbf{r}) - n(\mathbf{r})\right),
   $$
   
 where $$f$$ denotes the fraction of charged monomers in the polyelectrolyte. We assume for this problem that $$fN \gg 1$$, i.e., that a sufficient number of monomers carry charge. To make our calculations simple in the end,
@@ -45,26 +47,13 @@ We aim now to write down the second-order fluctuations
   and 
   
   $$
-    \mathcal{F}_\mathrm{coul} = \int_{\mathbb{R}^3} d^3 \mathbf{r} d^3 \mathbf{r}^\prime \frac{\rho(\mathbf{r})\rho(\mathbf{r}^\prime)}{\lvert \mathbf{r} - \mathbf{r}^\prime \rvert},
+    \mathcal{F}_\mathrm{coul} = \int_{\mathbb{R}^3} d^3 \mathbf{r} d^3 \mathbf{r}^\prime \left(\frac{\rho(\mathbf{r})\rho(\mathbf{r}^\prime)}{\lvert \mathbf{r} - \mathbf{r}^\prime \rvert}\right),
   $$
+
+where $$d^3\mathbf{r} = dxdydz$$. The integrand of each of the free energies above is called the free energy _density_, and is denoted by $$f$$. Note that the free energies in the above are not functions in the usual sense, but functions _of_ functions, called _functionals_. A (real-valued) function $$f(x)$$ has argument $$x \in \mathbb{R}$$, whereas a functional $$f(g(x))$$ has argument $$g(x) \in X$$, where $$X(\mathbb{R})$$ denotes the space of functions valued over $$\mathbb{R}$$. Calculating the fluctuations of functionals requires additional machinery since defining differentiation of a functional is not obvious upon first glance. Suppose we are given a functional $$\mathcal{F}(\phi) = \int d^3 \mathbf{r}  f(\phi(\mathbf{r}), \nabla \phi(\mathbf{r}))$$ that is sufficiently nice (continuous, differentiable, etc.). The _functional derivative_ of $$\mathcal{F}(\phi)$$ with respect to $$\phi(\mathbf{r})$$ is given by
   
-  with $$d^3\mathbf{r} = dxdydz$$.
-This theme supports rendering beautiful math in inline and display modes using [MathJax 3](https://www.mathjax.org/) engine. You just need to surround your math expression with `$$`, like `$$ E = mc^2 $$`. If you leave it inside a paragraph, it will produce an inline expression, just like $$ E = mc^2 $$.
+  $$
+    \frac{\delta \mathcal{F}(\phi)}{\delta \phi} = \frac{\partial f(\phi, \nabla \phi)}{\partial \phi} - \nabla \cdot \frac{\partial f(\phi, \nabla \phi)}{\partial (\nabla \phi)}.
+  $$
 
-To use display mode, again surround your expression with `$$` and place it as a separate paragraph. Here is an example:
 
-$$
-\sum_{k=1}^\infty |\langle x, e_k \rangle|^2 \leq \|x\|^2
-$$
-
-You can also use `\begin{equation}...\end{equation}` instead of `$$` for display mode math.
-MathJax will automatically number equations:
-
-\begin{equation}
-\label{eq:cauchy-schwarz}
-\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
-\end{equation}
-
-and by adding `\label{...}` inside the equation environment, we can now refer to the equation using `\eqref`.
-
-Note that MathJax 3 is [a major re-write of MathJax](https://docs.mathjax.org/en/latest/upgrading/whats-new-3.0.html) that brought a significant improvement to the loading and rendering speed, which is now [on par with KaTeX](http://www.intmath.com/cg5/katex-mathjax-comparison.php).
