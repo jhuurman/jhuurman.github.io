@@ -33,9 +33,17 @@ We aim now to write down the second-order fluctuations
   where 
   
   $$
-  \mathcal{F}_\mathrm{vol} = \int_{\mathbb{R}^3} d^3 \left(\mathbf{r} \frac{\phi(\mathbf{r})}{N}\mathrm{ln}(\phi(\mathbf{r})) + (1-\phi(\mathbf{r})\mathrm{ln}(1-\phi(\mathbf{r})) + \chi \phi(\mathbf{r})^2\right).
+    \mathcal{F}_\mathrm{vol} = \int_{\mathbb{R}^3} d^3 \mathbf{r} \left( \frac{\phi(\mathbf{r})}{N}\mathrm{ln}(\phi(\mathbf{r})) + (1-\phi(\mathbf{r})\mathrm{ln}(1-\phi(\mathbf{r})) + \chi \phi(\mathbf{r})^2\right),
   $$
-
+  and
+  $$
+    \mathcal{F}_\mathrm{grad} = \int_{\mathbb{R}^3} d^3 \mathbf{r} \left(\frac{K}{2}(\nabla \phi(\mathbf{r}))^2\right),
+  $$    
+  and 
+  $$
+    \mathcal{F}_\mathrm{coul} = \int_{\mathbb{R}^3} d^3 \mathbf{r} d^3 \mathbf{r}^\prime \frac{\rho(\mathbf{r})\rho(\mathbf{r}^\prime)}{\lvert \mathbf{r} - \mathbf{r}^\prime \rvert},
+  $$
+  with $$d^3\mathbf{r} = dxdydz$$.
 This theme supports rendering beautiful math in inline and display modes using [MathJax 3](https://www.mathjax.org/) engine. You just need to surround your math expression with `$$`, like `$$ E = mc^2 $$`. If you leave it inside a paragraph, it will produce an inline expression, just like $$ E = mc^2 $$.
 
 To use display mode, again surround your expression with `$$` and place it as a separate paragraph. Here is an example:
