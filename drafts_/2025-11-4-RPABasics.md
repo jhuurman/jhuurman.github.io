@@ -56,4 +56,10 @@ where $$d^3\mathbf{r} = dxdydz$$. The integrand of each of the free energies abo
     \frac{\delta \mathcal{F}(\phi)}{\delta \phi} = \frac{\partial f(\phi, \nabla \phi)}{\partial \phi} - \nabla \cdot \frac{\partial f(\phi, \nabla \phi)}{\partial (\nabla \phi)}.
   $$
 
+The functional derivative is only half of the story, though. To calculate the fluctuations $$\delta \mathcal{F}$$ we must first make some observations. Namely, the fluctuations of the free energy $$\delta \mathcal{F}$$ is a function of the fluctuations of the argument of $$\mathcal{F}$$. If $$\mathcal{F} = \mathcal{F}(\phi)$$, then $$\delta \mathcal{F} = \delta \mathcal{F}(\delta \phi)$$. Since $$\delta \phi = \phi - \langle \phi \rangle$$, we can make the observation that the fluctuation of the free energy can be written as a _functional taylor expansion_ about $$\langle \phi \rangle$$:
+  
+  $$
+    \delta \mathcal{F}(\phi) = \underbrace{\mathcal{F}(\langle \phi \rangle)}_{\delta^{(0)}\mathcal{F}(\phi)} + \underbrace{\int d\mathbf{r} \frac{\delta f(\phi, \nabla \phi)}{\delta \phi} \delta \phi}_{\delta^{(1)} \mathcal{F}(\phi) } + \underbrace{\iint d\mathbf{r} d\mathbf{r}^\prime \frac{\delta^2f(\phi, \nabla \phi)}{\delta \phi(\mathbf{r})\delta\phi(\mathbf{r}^\prime)}\delta \phi(\mathbf{r}) \delta \phi(\mathbf{r}^\prime)}_{\delta^{(2)} \mathcal{F}(\phi)} + \dots
+  $$
+
 
