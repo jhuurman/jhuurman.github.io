@@ -35,7 +35,7 @@ We aim now to write down the second-order fluctuations
   where 
   
   $$
-    \mathcal{F}_\mathrm{vol} = \int_{\mathbb{R}^3} d^3 \mathbf{r} \left( \frac{\phi(\mathbf{r})}{N}\mathrm{ln}(\phi(\mathbf{r})) + (1-\phi(\mathbf{r})\mathrm{ln}(1-\phi(\mathbf{r})) + \chi \phi(\mathbf{r})^2\right),
+    \mathcal{F}_\mathrm{vol} = \int_{\mathbb{R}^3} d^3 \mathbf{r} \left[\frac{1}{a^3}\left( \frac{\phi(\mathbf{r})}{N}\mathrm{ln}(\phi(\mathbf{r})) + (1-\phi(\mathbf{r})\mathrm{ln}(1-\phi(\mathbf{r})) + \chi \phi(\mathbf{r})^2\right) + \left(n(\mathbf{r}) \ln(n(\mathbf{r})a^3) - n(\mathbf{r}) \right)\right],
   $$
   
   and
