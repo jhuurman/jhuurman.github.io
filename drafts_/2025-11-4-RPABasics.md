@@ -47,7 +47,7 @@ We aim now to write down the second-order fluctuations
   and 
   
   $$
-    \mathcal{F}_\mathrm{coul} = \int_{\mathbb{R}^3} d^3 \mathbf{r} d^3 \mathbf{r}^\prime \left(\frac{\rho(\mathbf{r})\rho(\mathbf{r}^\prime)}{\lvert \mathbf{r} - \mathbf{r}^\prime \rvert}\right),
+    \mathcal{F}_\mathrm{coul} = \frac{1}{2\varepsilon} \int_{\mathbb{R}^3} d^3 \mathbf{r} d^3 \mathbf{r}^\prime \left(\frac{\rho(\mathbf{r})\rho(\mathbf{r}^\prime)}{\lvert \mathbf{r} - \mathbf{r}^\prime \rvert}\right),
   $$
 
 where $$d^3\mathbf{r} = dxdydz$$. The integrand of each of the free energies above is called the free energy _density_, and is denoted by $$f$$. Note that the free energies in the above are not functions in the usual sense, but functions _of_ functions, called _functionals_. A (real-valued) function $$f(x)$$ has argument $$x \in \mathbb{R}$$, whereas a functional $$f(g(x))$$ has argument $$g(x) \in X$$, where $$X(\mathbb{R})$$ denotes the space of functions valued over $$\mathbb{R}$$. Calculating the fluctuations of functionals requires additional machinery since defining differentiation of a functional is not obvious upon first glance. Suppose we are given a functional $$\mathcal{F}(\phi) = \int d^3 \mathbf{r}  f(\phi(\mathbf{r}), \nabla \phi(\mathbf{r}))$$ that is sufficiently nice (continuous, differentiable, etc.). The _functional derivative_ of $$\mathcal{F}(\phi)$$ with respect to $$\phi(\mathbf{r})$$ is given by
@@ -59,7 +59,7 @@ where $$d^3\mathbf{r} = dxdydz$$. The integrand of each of the free energies abo
 The functional derivative is only half of the story, though. To calculate the fluctuations $$\delta \mathcal{F}$$ we must first make some observations. Namely, the fluctuations of the free energy $$\delta \mathcal{F}$$ is a function of the fluctuations of the argument of $$\mathcal{F}$$. If $$\mathcal{F} = \mathcal{F}(\phi)$$, then $$\delta \mathcal{F} = \delta \mathcal{F}(\delta \phi)$$. Since $$\delta \phi = \phi - \langle \phi \rangle$$, we can make the observation that the fluctuation of the free energy can be written as a _functional taylor expansion_ about $$\langle \phi \rangle$$:
   
   $$
-    \delta \mathcal{F}(\phi) = \underbrace{\mathcal{F}(\langle \phi \rangle)}_{\delta^{(0)}\mathcal{F}(\phi)} + \underbrace{\int d\mathbf{r} \frac{\delta f(\phi, \nabla \phi)}{\delta \phi} \delta \phi}_{\delta^{(1)} \mathcal{F}(\phi) } + \underbrace{\iint d\mathbf{r} d\mathbf{r}^\prime \frac{\delta^2f(\phi, \nabla \phi)}{\delta \phi(\mathbf{r})\delta\phi(\mathbf{r}^\prime)}\delta \phi(\mathbf{r}) \delta \phi(\mathbf{r}^\prime)}_{\delta^{(2)} \mathcal{F}(\phi)} + \dots
+    \delta \mathcal{F}(\phi) = \underbrace{\mathcal{F}(\langle \phi \rangle)}_{\delta^{(0)}\mathcal{F}(\phi)} + \underbrace{\int d\mathbf{r} \frac{\delta f(\phi, \nabla \phi)}{\delta \phi} \delta \phi}_{\delta^{(1)} \mathcal{F}(\phi) } + \underbrace{\frac{1}{2}\iint d\mathbf{r} d\mathbf{r}^\prime \frac{\delta^2f(\phi, \nabla \phi)}{\delta \phi(\mathbf{r})\delta\phi(\mathbf{r}^\prime)}\delta \phi(\mathbf{r}) \delta \phi(\mathbf{r}^\prime)}_{\delta^{(2)} \mathcal{F}(\phi)} + \dots
   $$
 
 
