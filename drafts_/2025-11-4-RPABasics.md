@@ -35,7 +35,7 @@ We aim now to write down the second-order fluctuations
   where 
   
   $$
-    \mathcal{F}_\mathrm{vol} = \int_{\mathbb{R}^3} d^3 \mathbf{r} \left[\frac{1}{a^3}\left( \frac{\phi(\mathbf{r})}{N}\mathrm{ln}(\phi(\mathbf{r})) + (1-\phi(\mathbf{r})\mathrm{ln}(1-\phi(\mathbf{r})) + \chi \phi(\mathbf{r})^2\right) + \left(n(\mathbf{r}) \ln(n(\mathbf{r})a^3) - n(\mathbf{r}) \right)\right],
+    \mathcal{F}_\mathrm{vol} = \int_{\mathbb{R}^3} d^3 \mathbf{r} \left[\frac{1}{a^3}\left( \frac{\phi(\mathbf{r})}{N}\mathrm{ln}(\phi(\mathbf{r})) + (1-\phi(\mathbf{r})\mathrm{ln}(1-\phi(\mathbf{r})) - \chi \phi(\mathbf{r})^2\right) + \left(n(\mathbf{r}) \ln(n(\mathbf{r})a^3) - n(\mathbf{r}) \right)\right],
   $$
   
   and
@@ -62,4 +62,38 @@ The functional derivative is only half of the story, though. To calculate the fl
     \delta \mathcal{F}(\phi) = \underbrace{\mathcal{F}(\langle \phi \rangle)}_{\delta^{(0)}\mathcal{F}(\phi)} + \underbrace{\int d\mathbf{r} \frac{\delta f(\phi, \nabla \phi)}{\delta \phi} \delta \phi}_{\delta^{(1)} \mathcal{F}(\phi) } + \underbrace{\frac{1}{2}\iint d\mathbf{r} d\mathbf{r}^\prime \frac{\delta^2f(\phi, \nabla \phi)}{\delta \phi(\mathbf{r})\delta\phi(\mathbf{r}^\prime)}\delta \phi(\mathbf{r}) \delta \phi(\mathbf{r}^\prime)}_{\delta^{(2)} \mathcal{F}(\phi)} + \dots
   $$
 
+Let us begin by finding the second order fluctuations of $\mathcal{F}_\mathrm{vol}$. We have
 
+  $$ 
+    \delta^{(1)} \mathcal{F} = \int d^3 \mathbf{r} \left(\frac{\delta f_\mathrm{vol}}{\delta \phi}\bigg\rvert_{\langle \phi \rangle} + \frac{\delta f_\mathrm{vol}}{\delta n}\bigg\rvert_{\langle n \rangle}\right),
+  $$
+
+and 
+  
+  $$
+    \delta^{(2)} \mathcal{F} = \frac{1}{2!} \iint d^3 \mathbf{r}d^3\mathbf{r}^\prime \left(\frac{\delta^2 f_\mathrm{vol}}{\delta \phi(\mathbf{r}^\prime) \delta \phi(\mathbf{r})}\bigg\rvert_{\langle \phi \rangle} \delta \phi(\mathbf{r}^\prime)\delta \phi(\mathbf{r}) + \frac{\delta^2 f_\mathrm{vol}}{\delta n(\mathbf{r}^\prime) \delta n(\mathbf{r})}\bigg\rvert_{\langle n \rangle} \delta n(\mathbf{r}^\prime) \delta n (\mathbf{r})\right).
+  $$
+
+Note before continuing that the functional derivative in the first order fluctuations $\delta^{(1)} \mathcal{F}$ evaluated at the mean-field values $\langle \phi \rangle$ and $\langle n \rangle$ is equal to zero by definition of the mean-field values (we indeed expect the derivative of the free energy evaluated at mean-field values to be zero). For the second order fluctuations $\delta^{(2)} \mathcal{F}$, by using the definition of functional derivation as mentioned before, and by noting that $f_\mathrm{vol} = f_\mathrm{vol}(\phi, n)$ (i.e., the free energy density does not depend on the gradients of $\phi$ or $n$), we have:
+
+  $$ 
+    \delta^{(2)} \mathcal{F} = \frac{1}{2}\iint d^3 \mathbf{r} d^3 \mathbf{r}^\prime \left(\frac{\partial^2 f_\mathrm{vol}}{\partial \phi^2} \delta(r-r^\prime) + \frac{\partial^2 f_\mathrm{vol}}{\partial n^2}\delta(r-r^\prime) \right),
+  $$
+
+where the delta function $\delta(r-r^\prime)$ comes from the following simple calculation:
+
+  $$
+    f^\prime = \frac{\partial f}{\partial \phi } \implies \frac{\partial f^\prime}{\partial \phi(\mathbf{r}^\prime)} = \frac{\partial f^\prime}{\partial \phi(\mathbf{r})} \frac{\delta \phi(\mathbf{r})}{\delta \phi(\mathbf{r}^\prime)} = f^{\prime\prime}(\phi(\mathbf{r})) \delta(r-r^\prime) \quad \text{(the same follows for } n(\mathbf{r})\text{)}.
+  $$
+
+Thus, the second order fluctuations take the form
+  
+  $$
+    \delta^{(2)} \mathcal{F} = \frac{1}{2} \int d^3 \mathbf{r} \left[\left(\frac{1}{N\langle \phi \rangle} + \frac{1}{1-\langle \phi \rangle} - 2\chi \right)(\delta \phi)^2 + \frac{1}{\langle n \rangle} (\delta n)^2 \right],
+  $$
+
+which we will leave in real-space for now. For the second order fluctuations of $\mathcal{F}_\mathrm{grad}$, the expression for $\mathcal{F}_\mathrm{grad}$ is already quadratic, so the fluctuations take the form
+
+  $$
+    \delta^{(2)} \mathcal{F}_\mathrm{grad}  = \int d^3 \mathbf{r} \frac{K}{2} \left(\nabla \delta \phi \right)^2
+  $$
