@@ -83,7 +83,7 @@ Note before continuing that the functional derivative in the first order fluctua
 where the delta function $$\delta(\mathbf{r}-\mathbf{r}^\prime)$$ comes from the following simple calculation:
 
   $$
-    f^\prime = \frac{\partial f}{\partial \phi } \implies \frac{\partial f^\prime}{\partial \phi(\mathbf{r}^\prime)} = \frac{\partial f^\prime}{\partial \phi(\mathbf{r})} \frac{\delta \phi(\mathbf{r})}{\delta \phi(\mathbf{r}^\prime)} = f^{\prime\prime}(\phi(\mathbf{r})) \delta(r-r^\prime) \quad \text{(the same follows for } n(\mathbf{r})\text{)}.
+    f^\prime = \frac{\partial f}{\partial \phi } \implies \frac{\partial f^\prime}{\partial \phi(\mathbf{r}^\prime)} = \frac{\partial f^\prime}{\partial \phi(\mathbf{r})} \frac{\delta \phi(\mathbf{r})}{\delta \phi(\mathbf{r}^\prime)} = f^{\prime\prime}(\phi(\mathbf{r})) \delta(\mathbf{r}-\mathbf{r}^\prime) \quad \text{(the same follows for } n(\mathbf{r})\text{)}.
   $$
 
 Thus, the second order fluctuations take the form
